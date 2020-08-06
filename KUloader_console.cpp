@@ -38,7 +38,7 @@ int downloadEventCallback(aria2::Session* session, aria2::DownloadEvent event,
 
 int main(int argc, char** argv)
 {
-  int rv;
+  int response_value;
   if (argc < 2) {
     std::cerr << "How to download?:\n"
               <<"just type: ./kuloader_download <URI1> <URI2> <URI(N)>"
@@ -64,8 +64,8 @@ int main(int argc, char** argv)
   for (int i = 1; i < argc; ++i) {
     std::vector<std::string> uris = {argv[i]};
     aria2::KeyVals options;
-    rv = aria2::addUri(session, nullptr, uris, options);
-    if (rv < 0) {
+    response_value = aria2::addUri(session, nullptr, uris, options);
+    if (response_value < 0) {
       std::cerr << "Failed to add download " << uris[0] << std::endl;
     }
   }
@@ -74,8 +74,8 @@ int main(int argc, char** argv)
   auto start = std::chrono::steady_clock::now();
   for (;;) 
   {
-    rv = aria2::run(session, aria2::RUN_ONCE);
-    if (rv != 1) {
+    response_value = aria2::run(session, aria2::RUN_ONCE);
+    if (response_value != 1) {
       break;
     }
 
@@ -119,8 +119,8 @@ int main(int argc, char** argv)
     }
   }
   
-  rv = aria2::sessionFinal(session);
+  response_value = aria2::sessionFinal(session);
   aria2::libraryDeinit();
-  return rv;
+  return response_value;
 
 }
