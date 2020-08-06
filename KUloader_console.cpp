@@ -40,9 +40,8 @@ int main(int argc, char** argv)
 {
   int rv;
   if (argc < 2) {
-    std::cerr << "Usage: libaria2ex URI [URI...]\n"
-              << "\n"
-              << "  Download given URIs in parallel in the current directory."
+    std::cerr << "How to download?:\n"
+              <<"just type: ./kuloader_download <URI1> <URI2> <URI(N)>"
               << std::endl;
     exit(EXIT_SUCCESS);
   }
