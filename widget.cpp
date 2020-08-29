@@ -71,7 +71,6 @@ int Widget::doDownload()
 }
 
 
-
 void Widget::printInfo()
 {
     auto& session = aria2cpp::Session::get();
