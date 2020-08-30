@@ -1,2 +1,2 @@
 # KU-Loader
-A GUI download manager created bu using libaria2
+A GUI download manager created using libaria2
