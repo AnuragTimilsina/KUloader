@@ -1,6 +1,7 @@
 #include "widget.h"
 #include <QMessageBox>
 #include <QDebug>
+#include <thread>
 #include "aria2cpp.h"
 
 int Widget::doDownload()

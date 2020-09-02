@@ -15,11 +15,9 @@ Widget::Widget(QWidget *parent)
     setWindowTitle("KU Loader 1.0.0");
     setFixedSize(700,280);
     initUi();
+    isStopped = false;
 }
 
-Widget::~Widget()
-{
-}
 
 
 

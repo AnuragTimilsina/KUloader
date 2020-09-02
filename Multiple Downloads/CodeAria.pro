@@ -4,6 +4,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
 
+QMAKE_CXXFLAGS += -lpthread
+LIBS += -lpthread
+
 LIBS += -laria2
 
 # The following define makes your compiler emit warnings if you use

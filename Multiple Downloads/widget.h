@@ -51,7 +51,6 @@ private:
 
 public:
     Widget(QWidget *parent = nullptr);
-    ~Widget();
 
     std::string getUrl() const;
     void setUrl(const std::string &value);
@@ -76,6 +75,8 @@ public:
 
     //reset window
     void resetWindow();
+
+    bool isStopped;
 
 private slots:
     void quitClicked();
