@@ -29,8 +29,8 @@ void Widget::downloadClicked()
 
     if(isDirectoryValid) {
         this->downloadButton->setDisabled(true);
-        doDownload();
-        //threadInitialize = true;
+        //doDownload();
+        threadInitialize = true;
     }
     else {
         QMessageBox::warning(this, "ERROR MESSAGE", "Your directory path is invalid.\nPlease enter a valid path", QMessageBox::Ok);
