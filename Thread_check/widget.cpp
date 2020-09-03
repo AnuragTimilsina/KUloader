@@ -16,6 +16,7 @@ Widget::Widget(QWidget *parent)
     setFixedSize(700,280);
     initUi();
     isStopped = false;
+    threadInitialize = true;
 }
 
 
