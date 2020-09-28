@@ -15,9 +15,10 @@ MyThread::MyThread()
 unsigned long MyThread::tempID = 0;
 
 int MyThread::doDownload()
+//Actual download happens here
 {
     double progressValue;    //to keep track of the value progress bar
-//    Widget *wi = new Widget;
+
     const auto url = Widget::url;
     const auto outputFileName = Widget::directory;
     const auto outputDirectory = Widget::fname;
@@ -58,6 +59,9 @@ int MyThread::doDownload()
 }
 
 int MyThread::printInfo()
+
+//Prints the download Info.
+
 {
     double progressValue;
     auto& session = aria2cpp::Session::get();

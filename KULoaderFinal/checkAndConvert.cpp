@@ -1,6 +1,7 @@
 #include "widget.h"
 #include <QDir>
 
+
 QString Widget::convertFileSize(double sizeInByte)
 {
     //converts the file size from Bytes to KB or MB or GB if required
@@ -49,6 +50,7 @@ bool Widget::checkDirectory(QString path)
 QString Widget::convertSpeed(double speedInBytes)
 {
     //converts speed from Bytes per second to KB/s or MB/s if required
+
     double speedInKb;
     double speedInMb;
 

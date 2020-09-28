@@ -18,7 +18,6 @@ unsigned long MyThread::tempID = 0;
 int MyThread::doDownload()
 {
     double progressValue;    //to keep track of the value progress bar
-//    Widget *wi = new Widget;
     const auto url = Widget::url;
     const auto outputFileName = Widget::fname;
     const auto outputDirectory = Widget::directory;

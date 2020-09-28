@@ -25,14 +25,6 @@ Widget::Widget(QWidget *parent)
     connect(thread, SIGNAL(success()), this, SLOT(onSuccess()));
     connect(thread, SIGNAL(failure()), this, SLOT(onFailure()));
 
-    QPixmap backGround("/home/saskar/Desktop/index.jpeg");
-    backGround = backGround.scaled(this->size(), Qt::IgnoreAspectRatio);
-
-    QPalette palette;
-    palette.setBrush(QPalette::Window, backGround);
-    this->setPalette(palette);
-//    setStyleSheet("*{background-image:url(\"/home/saskar/Desktop/ima80-1.jpg\");}");
-
 }
 
 std::string Widget::fname = "";
