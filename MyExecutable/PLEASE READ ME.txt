@@ -1,0 +1,16 @@
+ABOUT THE EXECUTABLE:
+
+KU Loader is only supported on Linux distros provided that there exists libqt5widgets5 package.
+If the package doesn't exist then it as to be manually downloaded before running the executable.
+So, we have created a file "run.sh" which checks whether the package is installed in your computer,
+if it exists then the program will run; if it downot exists, it will first download the package and then 
+run the program.
+
+Steps:
+
+1) Allow run.sh to run as a program.
+
+2) In terminal enter the directory which consists the run.sh file and run this command:
+	./run.sh
+
+
