@@ -1,0 +1,18 @@
+ABOUT THE EXECUTABLE:
+
+KU Loader is only supported on Linux distros provided that there exists libqt5widgets5 
+and libaria-2-0-dev packages.
+If the package doesn't exist then it as to be manually downloaded before running the executable.
+To run the executable please run these commands on your bash
+
+
+1) sudo apt-get install libqt5widgets5
+
+2) sudo apt-get install libaria2-0-dev
+
+Then provide permission to run KULoader as an executable and enter inside the directory containing 
+the KULoader file and 
+
+3) ./KULoader
+
+
