@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1549</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 20px;
+	background-color: rgb(244, 244, 244);
+}
+
+QProgressBar {
+    border: transparent;
+    border-radius: 15px;
+    text-align: center;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-20</y>
+     <width>261</width>
+     <height>1071</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget{
+	
+	background:#091A2B;
+}</string>
+   </property>
+   <widget class="QPushButton" name="homeButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI Semilight</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#homeButton{
+ 	background-color: #091A2B;
+	color: white;
+	border: 0px;
+
+}
+QPushButton#homeButton:hover{
+  
+   background:#091A2B;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="downloadsButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>350</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#downloadsButton{
+ 	background: #091A2B;
+	color: white;
+	border: 0px;
+}
+QPushButton#downloadsButton:hover{
+  
+   background:#091A2B;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+QPushButton#pushButton_2:hover {
+	color: white;
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+QPushButton#pushButton_2 {
+	background: #091A2B;
+	border: 0px;
+	color: white	
+}</string>
+    </property>
+    <property name="text">
+     <string>Downloads</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI Semilight</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#aboutButton{
+ 	background: #091A2B;
+	color: white;
+	border: 0px;
+}
+
+QPushButton#aboutButton:hover{
+  
+   background:#091A2B;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>680</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS UI Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Version 1.0.0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>-10</y>
+     <width>1301</width>
+     <height>831</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLineEdit" name="urlPath">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>290</y>
+       <width>531</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>300</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Enter Url:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="directory">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>390</y>
+       <width>411</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>400</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Enter Directory:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fileName">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>500</y>
+       <width>521</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>500</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Enter File Name:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="downloadButton">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>620</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>SansSerif</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#downloadButton{
+color:white;
+	border-radius:30px;
+	border: transparent;
+	background-color: rgb(234, 64, 22);
+
+
+}
+QPushButton#downloadButton:hover{
+  
+   color:white;
+	border-radius:30px;
+	border: transparent;
+	
+	background-color: rgb(191, 34, 14);
+}</string>
+     </property>
+     <property name="text">
+      <string>Download</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="logo">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>20</y>
+       <width>551</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>220</y>
+       <width>871</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:15px;</string>
+     </property>
+     <widget class="QPushButton" name="browseButton">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>170</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#browseButton{
+	 color: #000;
+	
+	background-color: rgb(241, 241, 241);
+border-radius: 20px;
+ border: 1px black;
+}
+#browseButton:hover{
+	background-color:#2EE59D;
+ border: 1px solid black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>widget_3</zorder>
+    <zorder>urlPath</zorder>
+    <zorder>label</zorder>
+    <zorder>directory</zorder>
+    <zorder>label_2</zorder>
+    <zorder>fileName</zorder>
+    <zorder>label_3</zorder>
+    <zorder>downloadButton</zorder>
+    <zorder>logo</zorder>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>511</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poor Richard</family>
+       <pointsize>26</pointsize>
+       <italic>false</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#64dd17;</string>
+     </property>
+     <property name="text">
+      <string>Pending Download:</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>210</y>
+       <width>881</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:15px;</string>
+     </property>
+     <widget class="QLineEdit" name="uploadSpeed">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>90</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0 20px;
+	background-color:transparent;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="fileSize">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0 20px;
+	background-color:transparent;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>90</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI Semilight</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Download Speed:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="downloadSpeed">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>90</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0 20px;
+	background-color:transparent;
+
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>90</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI Semilight</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Upload Speed:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButton">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>350</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#quitButton{
+	background:white;
+	border-radius:10px;
+	border: 1px solid grey;
+	color: black;
+	
+}
+#quitButton:hover{
+background: black;
+border-radius:10px;
+	color: white;
+background:#091A2B;
+}</string>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nirmala UI Semilight</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>File Size:</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>791</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QProgressBar#progressBar{
+background-color: rgb(243, 243, 243);
+}</string>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>260</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Limit Download Speed:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="controlDownload">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>260</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#controlDownload{
+	border: 1px solid black;
+	text-align: center; 
+	border-radius: 15px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>260</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Limit Upload Speed:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="controlUpload">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>260</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#controlUpload{
+	border: 1px solid black;
+	text-align: center; 
+	border-radius: 15px;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>widget_2</zorder>
+    <zorder>label_11</zorder>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <property name="styleSheet">
+     <string notr="true">background:#948EEE;</string>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>600</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>SansSerif</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>COPYRIGHT(R) 2020</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>620</y>
+       <width>481</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poor Richard</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Grab your music, TV shows, movies, games and other files faster</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>660</y>
+       <width>341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poor Richard</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string> with a smart multi-stream download manager.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="logo2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>50</y>
+       <width>491</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exploreButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>480</y>
+       <width>311</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>SansSerif</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#exploreButton:hover{
+	border:2px white;
+border-radius:30px;
+color:white;
+background:transparent;
+}
+QPushButton#exploreButton{
+	border:2px  black;
+	color: white;
+	background:black;
+	border-radius:30px;
+}</string>
+     </property>
+     <property name="text">
+      <string>EXPLORE IN GITHUB</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>310</y>
+       <width>171</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poor Richard</family>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>About Us:</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>400</y>
+       <width>441</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Poor Richard</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPlainTextEdit#plainTextEdit{
+border:transparent;
+color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="plainText">
+      <string>This app is designed by students of Kathmandu University department of Computer Engineering. Currently we are working with 5 team members. We hope to extend our project further for easier excess to every people. 
+
+Keep Supporting!</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>370</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="about">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>230</y>
+       <width>361</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

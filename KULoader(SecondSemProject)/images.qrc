@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>about.png</file>
+        <file>download.png</file>
+        <file>house.png</file>
+        <file>info.png</file>
+        <file>pause.png</file>
+        <file>resume.png</file>
+        <file>splashscreen.jpg</file>
+        <file>logo.png</file>
+    </qresource>
+</RCC>
