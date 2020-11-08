@@ -8,10 +8,10 @@ class MyThread : public QThread
     Q_OBJECT  
     void run();
 
-public:
+private:
     aria2cpp::Session *session;
 public:
-    MyThread();
+    MyThread() {}
     ~MyThread();
     int doDownload();
     int printInfo(aria2cpp::Session*);
