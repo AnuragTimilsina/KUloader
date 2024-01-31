@@ -8,7 +8,7 @@ KU Loader is a download manager with QT, C++, and libaria2. KU Loader is a downl
 To run this application, clone the project files and open them with QT Creator.
 
 
-#Prerequisites
+# Prerequisites
 
 To run this software successfully on your machine, you should have
 
@@ -19,7 +19,7 @@ To run this software successfully on your machine, you should have
 5. libaria2 packages installed
 
 
-#Built With
+# Built With
 
 [C++ Programming Language] - The main programming language used
 Qt Framework - The web framework used
